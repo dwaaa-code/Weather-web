@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>weather-app</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-deco">
+        <h1 class="title">Weather App</h1>
+      </div>
+    </header>
+
+    <main>
+      <div id="card-container">
+        <div class="card-screen">
+          <span class="display-container">
+            <p class="temp-display">°0</p>
+            <p class="weather-display">sunny</p>
+          </span>
+        </div>
+
+        <input class="input-area" placeholder="masukan nama kota" />
+        
+        <div id="temp-container">
+          <div id="temp-button">
+            <input type="radio" name="unit" value="celsius" id="cel" checked />
+            <label for="cel">°C</label>
+
+            <input type="radio" name="unit" value="kelvin" id="kel" />
+            <label for="kel">°K</label>
+          </div>
+          <!-- End temp-container -->
+        </div>
+        <!-- End Card -->
+      </div>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
